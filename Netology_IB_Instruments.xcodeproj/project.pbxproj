@@ -13,6 +13,10 @@
 		9D2AC87D28EB32DF00CB879F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2AC87B28EB32DF00CB879F /* Main.storyboard */; };
 		9D2AC87F28EB32E000CB879F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2AC87E28EB32E000CB879F /* Assets.xcassets */; };
 		9D2AC88228EB32E000CB879F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2AC88028EB32E000CB879F /* LaunchScreen.storyboard */; };
+		9D66633528F0A06600624D70 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D66633428F0A06600624D70 /* ProfileView.xib */; };
+		9D66633728F2158400624D70 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D66633628F2158400624D70 /* ProfileView.swift */; };
+		9D66633928F21B8100624D70 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D66633828F21B8100624D70 /* Profile.storyboard */; };
+		9D66633B28F21BCE00624D70 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D66633A28F21BCE00624D70 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9D2AC87E28EB32E000CB879F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D2AC88128EB32E000CB879F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D2AC88328EB32E000CB879F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D66633428F0A06600624D70 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		9D66633628F2158400624D70 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9D66633828F21B8100624D70 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		9D66633A28F21BCE00624D70 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		9D2AC87428EB32DF00CB879F /* Netology_IB_Instruments */ = {
 			isa = PBXGroup;
 			children = (
+				9D66633328F0A03700624D70 /* ProfileView */,
 				9D2AC87528EB32DF00CB879F /* AppDelegate.swift */,
 				9D2AC87728EB32DF00CB879F /* SceneDelegate.swift */,
 				9D2AC87928EB32DF00CB879F /* ViewController.swift */,
@@ -63,8 +72,19 @@
 				9D2AC87E28EB32E000CB879F /* Assets.xcassets */,
 				9D2AC88028EB32E000CB879F /* LaunchScreen.storyboard */,
 				9D2AC88328EB32E000CB879F /* Info.plist */,
+				9D66633828F21B8100624D70 /* Profile.storyboard */,
+				9D66633A28F21BCE00624D70 /* ProfileViewController.swift */,
 			);
 			path = Netology_IB_Instruments;
+			sourceTree = "<group>";
+		};
+		9D66633328F0A03700624D70 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				9D66633428F0A06600624D70 /* ProfileView.xib */,
+				9D66633628F2158400624D70 /* ProfileView.swift */,
+			);
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +145,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D66633528F0A06600624D70 /* ProfileView.xib in Resources */,
 				9D2AC88228EB32E000CB879F /* LaunchScreen.storyboard in Resources */,
+				9D66633928F21B8100624D70 /* Profile.storyboard in Resources */,
 				9D2AC87F28EB32E000CB879F /* Assets.xcassets in Resources */,
 				9D2AC87D28EB32DF00CB879F /* Main.storyboard in Resources */,
 			);
@@ -138,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D66633728F2158400624D70 /* ProfileView.swift in Sources */,
 				9D2AC87A28EB32DF00CB879F /* ViewController.swift in Sources */,
+				9D66633B28F21BCE00624D70 /* ProfileViewController.swift in Sources */,
 				9D2AC87628EB32DF00CB879F /* AppDelegate.swift in Sources */,
 				9D2AC87828EB32DF00CB879F /* SceneDelegate.swift in Sources */,
 			);
@@ -291,9 +315,7 @@
 				INFOPLIST_FILE = Netology_IB_Instruments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Profile;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +325,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,9 +340,7 @@
 				INFOPLIST_FILE = Netology_IB_Instruments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Profile;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +350,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
